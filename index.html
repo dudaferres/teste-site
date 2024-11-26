@@ -15,7 +15,18 @@
             <div class="sessao">
                 <a href="#">Encerrar sessão</a>
             </div>
-            <img src="Assets/sino.png" width="20" height="20" alt="">
+            <div class="notification-container">
+                <img src="Assets/sino.png" width="20" height="20" alt="Notificações" id="bell-icon">
+                <span id="notification-count" class="notification-count">3</span> <!-- Exemplo de notificações -->
+            </div>
+            <!-- Lista de notificações, inicialmente oculta -->
+            <div id="notification-list" class="notification-list">
+                <ul>
+                    <li>Nova mensagem de Dr. Fulano</li>
+                    <li>Paciente X alterou seu plano alimentar</li>
+                    <li>Nova consulta agendada</li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -50,7 +61,7 @@
 
     <section class="plano">
         <div class="leito1">
-            <img src="Assets/do-utilizador.png" alt="">
+            <img src="Assets/do-utilizador.png" width="42" height="42" alt="">
             <p>Paciente1 - Leito 123</p>
         </div>
         <div class="leito2">
