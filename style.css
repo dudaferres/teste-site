@@ -3,132 +3,165 @@
 
 /* Reseta as margens e os preenchimentos de todos os elementos da página */
 * {
-    margin: 0;  /* Remove a margem padrão de todos os elementos */
-    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos para o cabeçalho (header), que usa Flexbox para distribuir seus itens */
 .cabecalho {
-    display: flex;  /* Define o layout como flexível (Flexbox) para organizar os itens internamente */
-    justify-content: space-between; /* Espaço igual entre os itens à esquerda (logo) e à direita (link + ícone) */
-    background-color: #EAEAEA;  /* Define a cor de fundo do cabeçalho */
-    width: 100%;  /* Faz o cabeçalho ocupar 100% da largura da tela */
-    height: 84px;  /* Define a altura fixa do cabeçalho */
-    flex-shrink: 0;  /* Impede que o cabeçalho encolha quando a janela for redimensionada */
-    align-items: center;  /* Alinha os itens verticalmente no centro do cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 10vh;  /* Usando altura relativa à altura da tela */
+    flex-shrink: 0;
+    align-items: center;
 }
 
 /* Estilos para a área à esquerda do cabeçalho (onde está o logo) */
 .cabecalho_esquerda img {
-    width: 194px;  /* Define a largura da imagem do logo */
-    height: 58px;  /* Define a altura da imagem do logo */
-    margin-left: 29px;  /* Adiciona um espaço à esquerda da imagem, afastando-a da borda do cabeçalho */
+    width: 11.2vw;  /* Largura em relação à largura da tela */
+    height: auto;
+    margin-left: 2vw;  /* Margem ajustada para responsividade */
 }
 
 /* Estilos para a área à direita do cabeçalho (onde estão o link e o ícone) */
 .cabecalho_direita {
-    display: flex;  /* Usa Flexbox para organizar os itens (link e ícone) lado a lado */
-    align-items: center;  /* Alinha verticalmente o conteúdo dentro da área à direita */
-    margin-right: 33px;
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;  /* Margem ajustada para responsividade */
+    font-size: 0.70em;  /* Tamanho de fonte ajustado */
+
 }
 
-body{
-    background-color:#D9D9D9;;
+body {
+    background-color: #D9D9D9;
 }
 
-.sessao{
-    margin-right: 33px;
+.sessao {
+    margin-right: 3vw;
 }
 
-.sessao a{
+.sessao a {
     text-decoration: none;
-    color:#626262;
-    font-family: Inter;
+    color: #626262;
+    font-family: Inter, sans-serif;
+    font-size: 1.5em;  /* Usando tamanho relativo */
 }
 
-.aoLado{
-    width: 16%;
-    height: 1024px;
+.aoLado {
+    width: 18vw;  /* Largura ajustada para 20% da tela */
+    height: 50.80vw;  /* Altura ajustada para ocupar toda a altura da tela */
     background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.perfil img{
-    margin-left: 68px;
-    align-items: center;
-    margin-top: 50px;
+.perfil img {
+    margin-left: 2.20vw;
+    margin-top: 5vh;
+    max-width: 100%;  /* Garante que a imagem não ultrapasse a largura da tela */
 }
 
-.perfil h2{
-    margin-left: 68px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.perfil h2 {
+    margin-left: 2.20vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
-.doutor p{
-    margin-left: 80px;
-    margin-bottom: 20px;
+.doutor p {
+    margin-left: 3vw;
+    margin-bottom: 2vh;
 }
 
-.aoLado hr{
-    width: 214px;
+.aoLado hr {
+    width: 70%;  /* Usando largura relativa */
     height: 1px;
     background: #9B9B9B;
-    margin-left: 23px;
-    margin-bottom: 20px;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
 }
 
+/* Estilo para os links dentro de .planoAlimentar e outros links semelhantes */
+.planoAlimentar a, .consultas a, .mensagens a, .entregas a, .solicitacoes a, .interacoes a {
+    display: flex;
+    text-decoration: none;
+    color: #626262;
+    font-family: Inter, sans-serif;
+    font-size: 1.5em;  /* Tamanho de fonte ajustado */
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 1vw;  /* Margens ajustadas */
+    margin-top: 1em;
+    padding: 10px 20px;  /* Adicionando algum preenchimento ao redor do link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo de hover aplicado aos links dentro de .planoAlimentar */
 .planoAlimentar a{
-    text-decoration: none;
-    color:#626262;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 60px;
+    background-color: #D9D9D9;  /* Cor de fundo ao passar o mouse */
+    color: #333333;  /* Cor do texto ao passar o mouse */
+    border-radius: 52px;  /* Borda arredondada para o efeito de hover */
 }
 
-.consultas a{
-    text-decoration: none;
-    color:#626262;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 30px;
+.consultas:hover a, .interacoes:hover a, .mensagens:hover a, .entregas:hover a, .solicitacoes:hover a {
+    background-color: #D9D9D9;  /* Cor de fundo ao passar o mouse */
+    color: #333333;  /* Cor do texto ao passar o mouse */
+    border-radius: 52px;  /* Borda arredondada para o efeito de hover */
 }
 
-.mensagens a{
-    text-decoration: none;
-    color:#626262;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 75px;
+.plano{
+    
+    display: flex;
+    display: block;
+    position: absolute;
+    width: 74%;
+    height: 40vw;
+    left: 23.5%;
+    top: 23%;
+
+    background: #EAEAEA;
+    border-radius: 45px;
+
 }
 
-.entregas a{
-    text-decoration: none;
-    color:#626262;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 85px;
+.leito1, .leito2, .leito3, .leito4{
+    
+    width: 95%;
+    height: 8.8%;
+    display: flex;
+    border-radius: 35px;
+    background: #D9D9D9;
+    margin-top: 1.5em;
+    margin-left: 1vw;
+
 }
 
-.solicitacoes a{
-    text-decoration: none;
-    color:#626262;
+.leito1 img, .leito2 img, .leito3 img, .leito4 img{
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    border-radius: 20%;
+    background: #D9D9D9;
+    margin-top: 0.5em;
+    margin-left: 0.8vw;
+
+}
+
+.leito1 p, .leito2 p, .leito3 p, .leito4 p{
+    
+    display: flex;
+    border-radius: 35px;
+    background: #D9D9D9;
+    margin-top: 1.4em;
+    margin-left: 0.8vw;
+    color: #000;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
-    margin-left: 70px;
+
 }
