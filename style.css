@@ -1,38 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kadwa:wght@400;700&display=swap');
 
-/* Reseta as margens e os preenchimentos de todos os elementos da página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho (header), que usa Flexbox para distribuir seus itens */
 .cabecalho {
     display: flex;
     justify-content: space-between;
     background-color: #EAEAEA;
     width: 100%;
-    height: 10vh;  /* Usando altura relativa à altura da tela */
+    height: 10vh;
     flex-shrink: 0;
     align-items: center;
 }
 
-/* Estilos para a área à esquerda do cabeçalho (onde está o logo) */
 .cabecalho_esquerda img {
-    width: 11.2vw;  /* Largura em relação à largura da tela */
+    width: 11.2vw;
     height: auto;
-    margin-left: 2vw;  /* Margem ajustada para responsividade */
+    margin-left: 2vw;
 }
 
-/* Estilos para a área à direita do cabeçalho (onde estão o link e o ícone) */
 .cabecalho_direita {
     display: flex;
     align-items: center;
-    margin-right: 3vw;  /* Margem ajustada para responsividade */
-    font-size: 0.70em;  /* Tamanho de fonte ajustado */
-
+    margin-right: 3vw;
+    font-size: 0.70em;
 }
 
 body {
@@ -47,12 +42,12 @@ body {
     text-decoration: none;
     color: #626262;
     font-family: Inter, sans-serif;
-    font-size: 1.5em;  /* Usando tamanho relativo */
+    font-size: 1.5em;
 }
 
 .aoLado {
-    width: 18vw;  /* Largura ajustada para 20% da tela */
-    height: 50.80vw;  /* Altura ajustada para ocupar toda a altura da tela */
+    width: 13.5vw;
+    height: 50.80vw;
     background-color: #EAEAEA;
     display: flex;
     flex-direction: column;
@@ -60,60 +55,61 @@ body {
 }
 
 .perfil img {
-    margin-left: 2.20vw;
+    margin-left: 0.5vw;
     margin-top: 5vh;
-    max-width: 100%;  /* Garante que a imagem não ultrapasse a largura da tela */
+    max-width: 100%;
 }
 
 .perfil h2 {
-    margin-left: 2.20vw;
+    margin-left: 1.1vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .doutor p {
-    margin-left: 3vw;
+    margin-left: 1.18vw;
     margin-bottom: 2vh;
+    color: #000000;
+    font-family: Inter, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .aoLado hr {
-    width: 70%;  /* Usando largura relativa */
-    height: 1px;
+    width: 86%;
+    height: 0.25%;
     background: #9B9B9B;
-    margin-left: 1vw;
-    margin-bottom: 2vh;
+    margin-left: 0.1vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
-/* Estilo para os links dentro de .planoAlimentar e outros links semelhantes */
 .planoAlimentar a, .consultas a, .mensagens a, .entregas a, .solicitacoes a, .interacoes a {
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     color: #626262;
     font-family: Inter, sans-serif;
-    font-size: 1.5em;  /* Tamanho de fonte ajustado */
-    font-weight: 300;
+    font-size: 1.2vw;
+    font-weight: 400;
     line-height: normal;
-    margin-left: 1vw;  /* Margens ajustadas */
     margin-top: 1em;
-    padding: 10px 20px;  /* Adicionando algum preenchimento ao redor do link */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    padding: 0.625em 1.5em;
+    text-align: center;
+    border-radius: 52px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo de hover aplicado aos links dentro de .planoAlimentar */
-.planoAlimentar a{
-    background-color: #D9D9D9;  /* Cor de fundo ao passar o mouse */
-    color: #333333;  /* Cor do texto ao passar o mouse */
-    border-radius: 52px;  /* Borda arredondada para o efeito de hover */
+.planoAlimentar a {
+    background-color: #D9D9D9;
+    color: #333333;
+    border-radius: 52px;
 }
 
-.consultas:hover a, .interacoes:hover a, .mensagens:hover a, .entregas:hover a, .solicitacoes:hover a {
-    background-color: #D9D9D9;  /* Cor de fundo ao passar o mouse */
-    color: #333333;  /* Cor do texto ao passar o mouse */
-    border-radius: 52px;  /* Borda arredondada para o efeito de hover */
-}
-
-.plano{
-    
+.plano {
     display: flex;
     display: block;
     position: absolute;
@@ -121,14 +117,11 @@ body {
     height: 40vw;
     left: 23.5%;
     top: 23%;
-
     background: #EAEAEA;
     border-radius: 45px;
-
 }
 
-.leito1, .leito2, .leito3, .leito4{
-    
+.leito1, .leito2, .leito3, .leito4 {
     width: 95%;
     height: 10%;
     display: flex;
@@ -136,35 +129,36 @@ body {
     background: #D9D9D9;
     margin-top: 1.5em;
     margin-left: 1vw;
-
 }
 
-.leito1 img, .leito2 img, .leito3 img, .leito4 img{
+.leito1 img, .leito2 img, .leito3 img, .leito4 img {
     width: 2.5vw;
     height: 2.5vw;
     display: flex;
     border-radius: 20%;
     background: #D9D9D9;
-    margin-top: 0.8em;
-    margin-left: 0.8vw;
-
+    margin-top: -0.6vw;
 }
 
-.leito1 p, .leito2 p, .leito3 p, .leito4 p{
-    
+.leito1 a, .leito2 a, .leito3 a, .leito4 a {
     display: flex;
     border-radius: 35px;
     background: #D9D9D9;
     margin-top: 1.4vw;
-    margin-left: 0.8vw;
+    margin-left: 1vw;
     color: #000;
     font-family: Inter;
     font-size: 15px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
-
+    text-decoration: none;
 }
+
+.leito1 p, .leito2 p, .leito3 p, .leito4 p{
+    margin-left: 1vw;
+    margin-bottom: 0.1vw
+}
+
 
 .notification-container {
     position: relative;
@@ -185,9 +179,8 @@ body {
     line-height: 15px;
 }
 
-/* Estilo da lista de notificações */
 .notification-list {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: absolute;
     top: 30px;
     right: 0;
@@ -202,18 +195,4 @@ body {
 .notification-list ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-}
-
-.notification-list ul li {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.notification-list ul li:last-child {
-    border-bottom: none;
-}
-
-.notification-list ul li:hover {
-    background-color: #f0f0f0;
-}
+   
