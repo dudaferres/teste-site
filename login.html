@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+    </header>
+    
+    <img src="./Assets/logo.png" alt="">
+
+    <div class="form-container">
+        <h2>Bem-Vindo ao Portal da Nutrição</h2>
+        <form id="loginForm" action="javascript:void(0);">
+            <label for="usuario">Tipo de Usuário</label>
+            <select id="usuario" name="usuario" required>
+                <option value="paciente">Paciente (Responsável)</option>
+                <option value="profissional">Profissional</option>
+            </select>
+
+            <label for="documento">Selecione o Documento</label>
+            <select id="documento" name="documento" required>
+                <option value="cpf">CPF</option>
+                <option value="crn">CRN</option>
+            </select>
+
+            <label for="numeroDocumento">Documento (CPF ou CRN):</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" required placeholder="Digite o CPF ou CRN">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required placeholder="Digite a sua senha">
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <footer class="rodape">
+
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
