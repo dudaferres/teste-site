@@ -1,174 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kadwa:wght@400;700&display=swap');
+/* Medias */
+
+@media (max-width: 768px) {
+   
+}
+
+@media (min-width: 1024px) {
+   
+}
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    background-color: #EAEAEA;
-    width: 100%;
-    height: 10vh;
-    flex-shrink: 0;
-    align-items: center;
-}
-
-.cabecalho_esquerda img {
-    width: 11.2vw;
-    height: auto;
-    margin-left: 2vw;
-}
-
-.cabecalho_direita {
-    display: flex;
-    align-items: center;
-    margin-right: 3vw;
-    font-size: 0.70em;
+    box-sizing: border-box; 
 }
 
 body {
-    background-color: #D9D9D9;
-}
-
-.sessao {
-    margin-right: 3vw;
-}
-
-.sessao a {
-    text-decoration: none;
-    color: #626262;
-    font-family: Inter, sans-serif;
-    font-size: 1.5em;
-}
-
-.aoLado {
-    width: 13.5vw;
-    height: 50.80vw;
-    background-color: #EAEAEA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.perfil img {
-    margin-left: 0.5vw;
-    margin-top: 5vh;
-    max-width: 100%;
-}
-
-.perfil h2 {
-    margin-left: 1.1vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    color: #000000;
-    font-family: Inter, sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.doutor p {
-    margin-left: 1.18vw;
-    margin-bottom: 2vh;
-    color: #000000;
-    font-family: Inter, sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.aoLado hr {
-    width: 86%;
-    height: 0.25%;
-    background: #9B9B9B;
-    margin-left: 0.1vw;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
-.planoAlimentar a, .consultas a, .mensagens a, .entregas a, .solicitacoes a, .interacoes a {
-    display: inline-block;
-    text-decoration: none;
-    color: #626262;
-    font-family: Inter, sans-serif;
-    font-size: 1.2vw;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 1em;
-    padding: 0.625em 1.5em;
-    text-align: center;
-    border-radius: 52px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.planoAlimentar a {
-    background-color: #D9D9D9;
-    color: #333333;
-    border-radius: 52px;
-}
-
-.plano {
-    display: flex;
-    display: block;
-    position: absolute;
-    width: 74%;
-    height: 40vw;
-    left: 23.5%;
-    top: 23%;
-    background: #EAEAEA;
-    border-radius: 45px;
-}
-
-.leito1, .leito2, .leito3, .leito4 {
-    width: 95%;
-    height: 10%;
-    display: flex;
-    border-radius: 35px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
     background: #D9D9D9;
-    margin-top: 1.5em;
-    margin-left: 1vw;
+
 }
 
-.leito1 img, .leito2 img, .leito3 img, .leito4 img {
-    width: 2.5vw;
-    height: 2.5vw;
-    display: flex;
-    border-radius: 20%;
-    background: #D9D9D9;
-    margin-top: -0.6vw;
+html, body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
-.leito1 a, .leito2 a, .leito3 a, .leito4 a {
-    display: flex;
-    border-radius: 35px;
-    background: #D9D9D9;
-    margin-top: 1.4vw;
-    margin-left: 1vw;
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.leito1 p, .leito2 p, .leito3 p, .leito4 p{
-    margin-left: 1vw;
-    margin-bottom: 0.1vw
-}
-
-
-.notification-container {
-    position: relative;
-    display: inline-block;
-}
+/* Notificação */
 
 .notification-count {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    bottom: 6.5em;
+    right: 6%;
     background-color: red;
     color: white;
     border-radius: 50%;
@@ -180,10 +48,10 @@ body {
 }
 
 .notification-list {
-    display: none;
+    display: none; 
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 4rem;
+    right: 1rem;
     width: 200px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -195,4 +63,271 @@ body {
 .notification-list ul {
     list-style-type: none;
     padding: 0;
-   
+    margin: 0;
+}
+
+.notification-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification-list ul li:last-child {
+    border-bottom: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 14%;
+    background: #EAEAEA;
+}
+
+header a {
+    font-family: 'Inter';
+    margin-left: 73%;
+    margin-top: 0%;
+    padding: 1rem 0rem;
+    font-size: 100%;
+    color: #626262;
+}
+
+.img_sino {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 35%;
+    left: 92%;
+    cursor: pointer; /* Acrescenta para indicar que o sino é clicável */
+    z-index: 11; /* Garante que o sino fique acima da lista, se necessário */
+}
+
+/*Sidebar*/
+
+.sidebar {
+
+    position: absolute;
+    width: 20.3%;
+    height: 216%;
+    left: 0%;
+    top: 0%;
+    padding: 0% 0%;
+
+    background: #EAEAEA;
+
+}
+  
+.img_logo {
+
+    position: absolute;
+    width: 74%;
+    height: 5%;
+    left: 12%;
+    top: 1%;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5%;
+    
+}
+
+.usuario {
+
+    position: absolute;
+    width: 49%;
+    height: 10%;
+    left: 25%;
+    top: 13%;
+
+}
+/* Estilização dos Links*/
+
+a {
+
+    background: none;
+    border: none;
+    color: inherit; 
+    font: inherit; 
+    padding: 0%;
+    cursor: pointer; 
+    text-decoration: none; 
+    
+}
+  
+.link_sidebar {
+    margin-top: 210%; 
+    display: flex; 
+    flex-direction: column;
+    gap: 1em; 
+
+}
+
+.link_sidebar a {
+
+    display: block;
+    line-height: 1.9rem;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 15rem;
+
+    font-size: 1.5rem;
+    background: none;
+    border-radius: 52px;
+    text-align: center;
+    transition: background 0.1s ease, padding 0.1s ease;
+
+    color: #626262;
+
+}
+
+.link_sidebar a:hover {
+    background: #D9D9D9;
+    padding: 1em 0em;
+}
+
+
+
+/* Painel de Responsavel e Paciente*/
+
+
+.profissional {
+    
+    position: absolute;
+    left: 33%;
+    top: 26%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.nome_1{
+
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size:0.9rem;
+    line-height: 22%;
+
+    color: #000000;
+
+}
+
+
+.linha {
+
+    position: absolute;
+    width: 70%;
+    height:0%;
+    left: 14.5%;
+    top: 36%;
+
+    border: 1px solid #9B9B9B;
+
+}
+
+/* Plano de Alimentação*/
+
+.plano{
+    
+    display: flex;
+    display: block;
+    position: absolute;
+    width: 74%;
+    height: 167vh;
+    left: 23.5%;
+    top: 23%;
+
+    background: #EAEAEA;
+    border-radius: 45px;
+
+}
+
+.plano_alimentar {
+
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 3%;
+    top: 3%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120%;
+    line-height: 120%;
+
+    color: #000000;
+
+
+}
+
+.linha2 {
+
+    position: absolute;
+    width: 68.8vw;
+    height: 0%;
+    left: 2.99%;
+    top: 7.5%;
+
+    border: 1px solid #B0B0B0;
+
+}
+
+.refeicoes{
+ /*colocar em cada div*/
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1.5rem;
+
+}
+
+.refeicoes h2 {
+
+    font-size: 1.2rem;
+
+}
+
+.refeicoes p {
+
+    font-size: 1rem;
+
+}
+
+.box-cinza a{
+    display: flex;
+    align-items: center;  /* Alinha verticalmente os itens */
+    justify-content: flex-start;  /* Alinha os itens à esquerda */
+    width: 69vw;
+    height: 10vh;
+    padding: 2rem;
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+.box-cinza img {
+    width: 42px;
+    height: 42px;
+    margin-right: 1rem;  /* Espaçamento entre a imagem e o texto */
+}
+
+.box-cinza  {
+    margin: 0;  /* Remove qualquer margem padrão que possa interferir */
+}
+

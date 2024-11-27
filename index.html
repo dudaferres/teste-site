@@ -1,87 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consultas</title>
+    <link rel="icon" href="../Assets/logo_head.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="cabecalho_esquerda">
-            <img src="Assets/logo.png" width="100" height="58" alt="">
-        </div>
-        <div class="cabecalho_direita">
-            <div class="sessao">
-                <a href="login.html">Encerrar sessão</a>
-            </div>
-            <div class="notification-container">
-                <img src="Assets/sino.png" width="20" height="20" alt="Notificações" id="bell-icon">
-                <span id="notification-count" class="notification-count">3</span>
-            </div>
-            <div id="notification-list" class="notification-list">
-                <ul>
-                    <li>Nova mensagem de Dr. Fulano</li>
-                    <li>Paciente X solicitou alteração do plano alimentar</li>
-                    <li>Nova consulta agendada</li>
-                </ul>
-            </div>
-        </div>
-    </header>
 
-    <aside class="aoLado">
-        <section class="perfil">
-            <img src="Assets/do-utilizador.png" alt="">
-            <h2>Profissional</h2>
-            <div class="doutor">
-                <p>Doutor Fulano</p>
-            </div>
+    <header>
+        <img src="./Assets/sino.png" class="img_sino">
+    
+        <span id="notification-count" class="notification-count">3</span>
+    
+        <!-- Lista de notificações -->
+        <div id="notification-list" class="notification-list">
+            <ul>
+                <li>Nova mensagem de Dr. Fulano</li>
+                <li>Paciente X alterou seu plano alimentar</li>
+                <li>Nova consulta agendada</li>
+            </ul>
+        </div>
+    
+        <a href="/index.html">Encerrar Sessão</a>
+    </header>
+    
+
+    <aside>
+        <section class="sidebar">
+
+            <img src="./Assets/logo.png" class="img_logo">
+
+            <img src="./Assets/do-utilizador.png" class="usuario">
+
+            <img src="../Assets/Line 1.png" class="linha" alt="">
+
+
+            <h1 class="profissional">Profissional</h1>
+
+                <p class="nome_1">Lorem Ipsum is simply</p>
+
+                <nav>
+                 
+                    <div class="link_sidebar">
+
+                        <a href="./planoAlimentarR.html" class="link_page">Plano Alimentar</a>
+
+                        <a href="./consultasR.html" class="link_page">Consultas e Interações</a>
+
+                        <a href="./mensagensR.html" class="link_page">Mensagens</a>
+
+                        <a href="./pedidosR.html" class="link_page">Pedidos</a>
+
+                        <a href="./pedidosR.html" class="link_page">Entregas</a>
+
+                        <a href="./pedidosR.html" class="link_page">Solicitações</a>
+
+                </nav>
         </section>
-        <hr>
-        <div class="planoAlimentar">
-            <a href="#">Plano Alimentar</a>
-        </div>
-        <div class="consultas">
-            <a href="#">Consultas e Interações</a>
-        </div>
-        <div class="mensagens">
-            <a href="#">Mensagens</a>
-        </div>
-        <div class="entregas">
-            <a href="#">Entregas</a>
-        </div>
-        <div class="solicitacoes">
-            <a href="#">Solicitações</a>
-        </div>
     </aside>
 
     <section class="plano">
-        <div class="leito1">
-            <a href="link-do-paciente1.html">
-                <img src="Assets/do-utilizador.png" width="42" height="42" alt="">
+    
+        <div class="refeicoes">
+            <!-- pode duas classes em uma só -->
+
+            <div class="box-cinza">
+                <a href=""><img src="./Assets/do-utilizador.png" alt="">
+                <p>Paciente1 - Leito 123</p></a>
+            </div>
+
+            <div class="box-cinza">
+                <a href="">
+                    <img src="./Assets/do-utilizador.png" alt="">
+                    <p>Paciente1 - Leito 123</p>
+                </a>
+            </div>
+
+            <div class="box-cinza">
+                <a href="">
+                    <img src="./Assets/do-utilizador.png" alt="">
+                    <p>Paciente1 - Leito 123</p>
+                </a>
+            </div>
+
+            <div class="box-cinza">
+                <a href="">
+                <img src="./Assets/do-utilizador.png" alt="">
                 <p>Paciente1 - Leito 123</p>
-            </a>
-        </div>
-        <div class="leito2">
-            <a href="link-do-paciente2.html">
-                <img src="Assets/do-utilizador.png" width="42" height="42" alt="">
-                <p>Paciente2 - Leito 124</p>
-            </a>
-        </div>
-        <div class="leito3">
-            <a href="link-do-paciente3.html">
-                <img src="Assets/do-utilizador.png" width="42" height="42" alt="">
-                <p>Paciente3 - Leito 125</p>
-            </a>
-        </div>
-        <div class="leito4">
-            <a href="link-do-paciente4.html">
-                <img src="Assets/do-utilizador.png" width="42" height="42" alt="">
-                <p>Paciente4 - Leito 126</p>
-            </a>
+                </a>
+            </div>
+
         </div>
     </section>
-
-    <script src="script.js"></script>
+    
+        <script src="script.js"></script>
 </body>
 </html>
