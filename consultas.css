@@ -1,0 +1,335 @@
+/* Medias */
+
+@media (max-width: 768px) {
+   
+}
+
+@media (min-width: 1024px) {
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+    background: #D9D9D9;
+
+}
+
+html, body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Notificação */
+
+.notification-count {
+    position: absolute;
+    bottom: 6.5em;
+    right: 6%;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.notification-list {
+    display: none; 
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.notification-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification-list ul li:last-child {
+    border-bottom: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 14%;
+    background: #EAEAEA;
+}
+
+header a {
+    font-family: 'Inter';
+    margin-left: 82%;
+    margin-top: 0%;
+    padding: 1rem 0rem;
+    font-size: 100%;
+    color: #626262;
+}
+
+.img_sino {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 35%;
+    left: 92%;
+    cursor: pointer; /* Acrescenta para indicar que o sino é clicável */
+    z-index: 11; /* Garante que o sino fique acima da lista, se necessário */
+}
+
+/*Sidebar*/
+
+.sidebar {
+
+    position: absolute;
+    width: 20.3%;
+    height: 216%;
+    left: 0%;
+    top: 0%;
+    padding: 0% 0%;
+
+    background: #EAEAEA;
+
+}
+  
+.img_logo {
+
+    position: absolute;
+    width: 74%;
+    height: 5%;
+    left: 12%;
+    top: 1%;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5%;
+    
+}
+
+.usuario {
+
+    position: absolute;
+    width: 49%;
+    height: 10%;
+    left: 25%;
+    top: 13%;
+
+}
+/* Estilização dos Links*/
+
+a {
+
+    background: none;
+    border: none;
+    color: inherit; 
+    font: inherit; 
+    padding: 0%;
+    cursor: pointer; 
+    text-decoration: none; 
+    
+}
+  
+.link_sidebar {
+    margin-top: 210%; 
+    display: flex; 
+    flex-direction: column;
+    gap: 1em; 
+
+}
+
+.link_sidebar a {
+
+    display: block;
+    line-height: 1.9rem;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 15rem;
+
+    font-size: 1.5rem;
+    background: none;
+    border-radius: 52px;
+    text-align: center;
+    transition: background 0.1s ease, padding 0.1s ease;
+
+    color: #626262;
+
+}
+
+.link_sidebar a:hover {
+    background: #D9D9D9;
+    padding: 1em 0em;
+}
+
+
+
+/* Painel de Responsavel e Paciente*/
+
+
+.profissional {
+    
+    position: absolute;
+    left: 33%;
+    top: 26%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+.nome_1{
+
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size:0.9rem;
+    line-height: 22%;
+
+    color: #000000;
+
+}
+
+
+.linha {
+
+    position: absolute;
+    width: 70%;
+    height:0%;
+    left: 14.5%;
+    top: 36%;
+
+    border: 1px solid #9B9B9B;
+
+}
+
+/* Plano de Alimentação*/
+
+.plano{
+    
+    display: flex;
+    display: block;
+    position: absolute;
+    width: 74%;
+    height: 100vh;
+    left: 23.5%;
+    top: 23%;
+
+    background: #EAEAEA;
+    border-radius: 45px;
+
+}
+
+.plano_alimentar {
+
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 3%;
+    top: 3%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120%;
+    line-height: 120%;
+
+    color: #000000;
+
+
+}
+
+.linha2 {
+
+    position: absolute;
+    width: 68.8vw;
+    height: 0%;
+    left: 2.99%;
+    top: 7.5%;
+
+    border: 1px solid #B0B0B0;
+
+}
+
+.refeicoes{
+ /*colocar em cada div*/
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1.5rem;
+
+}
+
+.refeicoes h2 {
+
+    font-size: 1.2rem;
+
+}
+
+.refeicoes p {
+
+    font-size: 1rem;
+
+}
+
+.box-cinza {
+    display: flex;
+    align-items: center;  /* Alinha verticalmente os itens */
+    justify-content: flex-start;  /* Alinha os itens à esquerda */
+    width: 69vw;
+    height: 10vh;
+    padding: 2rem;
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+.utilizador {
+    width: 42px;
+    height: 42px;
+    margin-right: 1rem;  /* Espaçamento entre a imagem e o texto */
+}
+
+.lixo  {
+    width: 30px;
+    height: 30px;
+    margin-left: 70%;  /* Remove qualquer margem padrão que possa interferir */
+}
+

@@ -45,35 +45,35 @@ html, body {
     text-align: center;
     font-size: 12px;
     line-height: 15px;
-}
-
-.notification-list {
-    display: none; 
+  }
+  
+  .notification-list {
+    display: none;
     position: absolute;
-    top: 4rem;
-    right: 1rem;
+    top: 5rem;
+    right: 2.2rem;
     width: 200px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px;
-    z-index: 10;
-}
-
-.notification-list ul {
+    z-index: 20;
+  }
+  
+  .notification-list ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-.notification-list ul li {
+  }
+  
+  .notification-list ul li {
     padding: 10px;
     border-bottom: 1px solid #eee;
-}
-
-.notification-list ul li:last-child {
+  }
+  
+  .notification-list ul li:last-child {
     border-bottom: none;
-}
+  }
 
 /* Header */
 
