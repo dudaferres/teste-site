@@ -219,7 +219,7 @@ a {
   display: flex;
   display: block;
   position: absolute;
-  width: 74%;
+  width: 60%;
   height: 167vh;
   left: 23.5%;
   top: 23%;
@@ -250,7 +250,7 @@ a {
   display: block; /* Remover este 'display: block' porque já foi definido 'flex' (redundante) */
   position: absolute; /* O posicionamento absoluto pode afetar a responsividade, especialmente em telas pequenas */
   width: 74%; /* Define a largura da seção como 74% da tela */
-  height: 167vh; /* Define a altura como 167% da altura da tela, criando um layout grande */
+  height: 144vh; /* Define a altura como 167% da altura da tela, criando um layout grande */
   left: 23.5%; /* Posiciona a seção 23.5% da largura da tela à esquerda */
   top: 23%; /* Posiciona a seção 23% da altura da tela para baixo */
   background: #eaeaea; /* Cor de fundo da seção, um tom claro de cinza */
